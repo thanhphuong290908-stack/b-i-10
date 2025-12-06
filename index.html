@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài học</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f6f8fc;
+    }
+
+    /* Banner */
+    .banner {
+        width: 100%;
+        height: 240px;
+        background: url('bài 7.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Tiêu đề giữa banner */
+    .banner-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+    }
+
+    /* Nút quay về */
+    .back-btn {
+        display: inline-block;
+        margin: 25px;
+        background: #2a4d69;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-btn:hover {
+        background: #1d3550;
+    }
+
+    /* Tiêu đề phần */
+    h2 {
+        font-size: 32px;
+        margin-top: 40px;
+        color: #1a2e40;
+        text-align: left;
+        font-weight: 700;
+        font-family: Arial, sans-serif; /* phông bình thường */
+    }
+
+    /* Khung đề bài */
+    .problem-box {
+        background: white;
+        padding: 18px 22px;
+        border-left: 6px solid #2a4d69;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Nội dung */
+    .content {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+</style>
+</head>
+
+<body>
+
+<a href="https://nhungo2210028-hash.github.io/uuujij" class="back-btn">← Quay về trang chủ</a>
+
+<div class="banner">
+    <div class="banner-title">BÀI 7: HTML VÀ CẤU TRÚC TRANG WEB</div>
+</div>
+
+<div class="content">
+
+    <h2>LUYỆN TẬP</h2>
+
+   <div class="problem-box">
+    <b>Đề bài:</b>
+    <p> Luyện tập 1 trang 61 Tin học 12: Viết đoạn mã để tạo liên kết quay về trang chủ CLB.html trong trang thong_tin.html.
+    </p>
+       
+</div>
+    
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Thông tin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Nội dung của trang thông tin --&gt;
+    &lt;h1&gt;Thông tin CLB&lt;/h1&gt;
+    &lt;p&gt;Đây là trang thông tin về CLB của chúng ta.&lt;/p&gt;
+    &lt;!-- Liên kết quay về trang chủ --&gt;
+    &lt;a href="CLB.html"&gt;Quay về trang chủ&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+      <div class="problem-box">
+        <b>Đề bài:</b>  
+         <P>Luyện tập 2 trang 61 Tin học 12: Viết một trang web giới thiệu bản thân, trong đó để ít nhất 3 liên kết tới trang web (có thể là Facebook) của ba bạn cùng lớp.
+</P>
+
+    </div>
+
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Giới thiệu bản thân&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Giới thiệu bản thân&lt;/h1&gt;
+    &lt;p&gt;Xin chào! Tôi là [Tên của bạn], đây là một trang web giới thiệu về bản thân tôi.&lt;/p&gt;
+    &lt;h2&gt;Bạn cùng lớp&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/friend1&quot; target=&quot;_blank&quot;&gt;Facebook của Bạn 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/friend2&quot; target=&quot;_blank&quot;&gt;Facebook của Bạn 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/friend3&quot; target=&quot;_blank&quot;&gt;Facebook của Bạn 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Cảm ơn bạn đã ghé thăm!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ </pre>
+      
+
+    <h2>VẬN DỤNG</h2>
+
+    <div class="problem-box">
+    <b>Đề bài:</b>
+    <p>Vận dụng trang 61 Tin học 12: Viết thêm các đoạn giới thiệu (địa điểm số, thành viên, thành tích, phí hội viên, điện thoại liên hệ) cho từng câu lạc bộ ở dưới bảng Lịch hoạt động công tác CLB thể thao rồi đặt liên kết từ tên câu lạc bộ trong bảng đến đoạn giới thiệu tương ứng.
+</p>
+</div>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Lịch hoạt động công tác CLB thể thao&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Lịch hoạt động công tác CLB thể thao&lt;/h1&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Tên câu lạc bộ&lt;/th&gt;
+            &lt;th&gt;Lịch hoạt động&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#club1&quot;&gt;Câu lạc bộ A&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Thứ Hai, Thứ Tư, Thứ Sáu - 18:00 đến 20:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#club2&quot;&gt;Câu lạc bộ B&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Thứ Ba, Thứ Năm - 16:00 đến 18:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!--Thêm hàng cho các câu lạc bộ khác nếu cần--&gt;
+    &lt;/table&gt;
+
+    &lt;h2 id=&quot;club1&quot;&gt;Câu lạc bộ A&lt;/h2&gt;
+    &lt;p&gt;Địa điểm: Sân Bóng XYZ&lt;/p&gt;
+    &lt;p&gt;Thành viên: 50&lt;/p&gt;
+    &lt;p&gt;Thành tích: Đạt giải nhất giải đấu Thể thao X năm 20XX&lt;/p&gt;
+    &lt;p&gt;Phí hội viên: 100.000 đồng/tháng&lt;/p&gt;
+    &lt;p&gt;Điện thoại liên hệ: 0123 456 789&lt;/p&gt;
+
+    &lt;h2 id=&quot;club2&quot;&gt;Câu lạc bộ B&lt;/h2&gt;
+    &lt;p&gt;Địa điểm: Bể Bơi ABC&lt;/p&gt;
+    &lt;p&gt;Thành viên: 30&lt;/p&gt;
+    &lt;p&gt;Thành tích: Huy chương vàng môn bơi lội tại Hội thao Y năm 20XX&lt;/p&gt;
+    &lt;p&gt;Phí hội viên: 150.000 đồng/tháng&lt;/p&gt;
+    &lt;p&gt;Điện thoại liên hệ: 0987 654 321&lt;/p&gt;
+
+    &lt;!--Thêm phần giới thiệu cho các câu lạc bộ khác nếu cần--&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+  
